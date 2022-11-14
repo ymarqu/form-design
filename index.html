@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What if your favorite animal? || 🦒🐠🦔</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="main-heading">Question of the Day</h1>
+    <form action="/" method="post">
+        <fieldset>
+            <!-- <legend>Add user</legend> -->
+            <div>
+                <label for="firstName">First Name</label><br>
+                <input type="text" placeholder="Ex: Jane" name="firstName">
+            </div>
+            <div>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" placeholder="Ex: Doe" name="lastName">
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Ex: jane.doe@domain.com">
+            </div>
+            <div>
+                <label for="status">Current status:</label>
+                <select name="status" id="status">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div>
+                <p>Choose your favorite animal:</p>
+                <input type="radio" id="html" name="fav-lang" value="HTML">
+                <label class="animal" for="html">🦒</label><br>
+                <input type="radio" id="css" name="fav-lang" value="CSS">
+                <label class="animal" for="css">🐠</label><br>
+                <input type="radio" id="javascript" name="fav-lang" value="Javascript">
+                <label class="animal" for="javascript">🦔</label>
+            </div>
+            <div>
+                <label for="comments">Comments</label><br>
+                <textarea rows="7" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="todays-date">Today's date:</label>
+                <input type="date" id="todays-date" name="todays_date">
+            </div>
+            <div class="submission">
+                <input type="checkbox" name="news-letter" id="news-letter">
+                <label for="news-letter">Sign up for newsletter</label><br>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Agree to terms and conditions</label><br>
+                <button class="button submit-btn">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
